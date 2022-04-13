@@ -1,0 +1,528 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finantial Tracker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap1.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/templatemo-finance-business.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.css' %}">
+
+</head>
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'home' %}"><h2>Finance Business</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link  active" href="{% url 'home' %}">Home
+                  <!-- <span class="sr-only">(current)</span> -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="{% url 'service' %}">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'signup' %}">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are ready to help you</h6>
+                  <h4>Financial Analysis<br>&amp; Consulting</h4>
+                  <p>This finance HTML template is 100% free of charge provided by TemplateMo for everyone. You can download, edit and use this layout for your business website.</p>
+                  <a href="{% url 'contact' %}" class="filled-button">contact us</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are here to support you</h6>
+                  <h4>Accounting<br>&amp; Management</h4>
+                  <p>You are allowed to use this template for your company websites. You are NOT allowed to re-distribute this template ZIP file on any template download website. Please contact TemplateMo for more detail.</p>
+                  <a href="{% url 'service' %}" class="filled-button">our services</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we have a solid background</h6>
+                  <h4>Market Analysis<br>&amp; Statistics</h4>
+                  <p>Vivamus ut tellus mi. Nulla nec cursus elit, id vulputate mi. Sed nec cursus augue. Phasellus lacinia ac sapien vitae dapibus. Mauris ut dapibus velit cras interdum nisl ac urna tempor mollis.</p>
+                  <a href="{% url 'about' %}" class="filled-button">learn more</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>Financial Data Monitoring</h2>
+                <span>Powerful, secure, and scalable financial data analytics, that infuses intelligence into your workflows to drive decision-making and action. Propel your growth, capture every opportunity and add value to your customers with data from each transaction</span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="{% static 'images/mutualfund1.png' %}" alt="">
+                <div class="down-content">
+                  <h4>Mutual Funds</h4>
+                  <p>A mutual fund is a type of financial vehicle made up of a pool of money collected from many investors to invest in securities like stocks, bonds, money market instruments, and other assets.</p>
+                  <a href="{% url 'service' %}" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="{% static 'images/service_02.jpg' %}" alt="">
+                <div class="down-content">
+                  <h4>Insurance</h4>
+                  <p>Insurance is a means of protection from financial loss. It is a form of risk management, primarily used to hedge against the risk of a contingent or uncertain loss.</p>
+                  <a href="{% url 'service' %}" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="{% static 'images/service_03.jpg' %}" alt="">
+                <div class="down-content">
+                  <h4>Fixed Deposit</h4>
+                  <p>Fixed deposit are a safe investment option that guarantees consistent interest rates, special interest rates for senior citizens, various interest payment options, and no market-related risks, with income tax deductions.</p>
+                  <a href="{% url 'service' %}" class="filled-button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <br>
+
+
+<div class="container">
+    </br>
+    <div class="row">
+        <div>
+            <button data-toggle="modal" data-target="#filter" type="button" class="btn btn-primary"
+                    style="font-size: 20px; margin: auto; display: block">Search Data
+            </button>
+        </div>
+    </div>
+    <div class="theme-switch-wrapper" style="visibility: hidden">
+        <label class="theme-switch" for="checkbox">
+            <input onclick="toggleTheme()" style="display: inline" type="checkbox" id="checkbox"/>
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <script src="{% static 'darkmode.js' %}"></script>
+    </br>
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2>Finantial <b>Expenses</b></h2>
+                </div>
+                <div class="col-sm-offset-3">
+                    <a href="#addExpenseModal" class="btn" data-toggle="modal"><i class="material-icons">&#xE147;</i>
+                        <span>Add your Expense</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="filter" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form method="post" action="">
+                        {% csrf_token %}
+                        <div class="modal-header">
+                            <h4 class="modal-title">Filter by month and year</h4>
+                            <button type="button" class="btn-close close" data-dismiss="modal" aria-hidden="true">
+                                &times;
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label>Month</label>
+                                <select class="form-control" name="month" required>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Year</label>
+                                <select class="form-control" name="year" required>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                            <input type="submit" class="btn btn-info" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover">
+            {% if expenses %}
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+            
+            </thead>
+                {% for expense in expenses %}
+                    <tbody>
+                    <tr>
+                        <td>{{ expense.item.capitalize }}</td>
+                        <td>{{ expense.amount }}</td>
+                        <td>{{ expense.category.capitalize }}</td>
+                        <td>{{ expense.date }}</td>
+                        <td>
+                            <a href="#updatemodal{{ expense.id }}" class="edit" data-toggle="modal"><i
+                                    class="material-icons"
+                                    data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deletemodal{{ expense.id }}" class="Delete delete" data-toggle="modal"><i
+                                    class="material-icons"
+                                    data-toggle="tooltip"
+                                    title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <!-- Edit Modal HTML -->
+                    <div id="updatemodal{{ expense.id }}" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form method="post" action="./update/{{ expense.id }}">
+                                    {% csrf_token %}
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Edit Expense</h4>
+                                        <button type="button" class="btn-close close" data-dismiss="modal"
+                                                aria-hidden="true">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <label>Item</label>
+                                            <input class="form-control" type="text" name="item" placeholder="Enter the item"
+                                                   value="{{ expense.item }}"
+                                                   required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Amount</label>
+                                            <input class="form-control" type="text" name="amount"
+                                                   placeholder="Enter the amount"
+                                                   value="{{ expense.amount }}"
+                                                   required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Category</label>
+                                            <select id="category" class="form-control custom-select" name="category"
+                                                    required>
+                                                {% if expense.category == "clothes" %}
+                                                    <option value="food" name="category">Food</option>
+                                                    <option selected value="clothes" name="category">Clothes</option>
+                                                    <option value="travel" name="category">Travel</option>
+                                                {% elif expense.category == "food" %}
+                                                    <option selected value="food" name="category">Food</option>
+                                                    <option value="clothes" name="category">Clothes</option>
+                                                    <option value="travel" name="category">Travel</option>
+                                                {% elif expense.category == "travel" %}
+                                                    <option value="food" name="category">Food</option>
+                                                    <option value="clothes" name="category">Clothes</option>
+                                                    <option selected value="travel" name="category">Travel</option>
+                                                {% endif %}
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Date</label>
+                                            <input type="date" class="form-control" name="date"
+                                                   value="{{ expense.date.isoformat }}">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                        <input type="submit" class="btn btn-info" value="Save">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Delete Modal HTML -->
+                    <div id="deletemodal{{ expense.id }}" class="modal fade">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <form method="post" action="./delete/{{ expense.id }}">
+                                    {% csrf_token %}
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Delete Expense</h4>
+                                        <button type="button" class="btn-close close" data-dismiss="modal"
+                                                aria-hidden="true">
+                                            &times;
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you sure you want to delete this record?</p>
+                                        <p class="text-warning"><small>This action cannot be undone.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                                        <input type="submit" class="btn btn-danger" value="Delete">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h1 style="text-align: center">No Data</h1>
+                <form method="get" action="">
+                    <button type="submit" class="btn btn-primary" style="font-size: 15px; margin: auto; display: block">Back</button>
+                </form>
+            {% endif %}
+            
+        </table>
+    </div>
+</div>
+<!-- Add Modal HTML -->
+<div id="addExpenseModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" action="./add">
+                {% csrf_token %}
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Expense</h4>
+                    <button type="button" class="btn-close close" data-dismiss="modal" aria-hidden="true">&times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Item</label>
+                        <input class="form-control" type="text" name="item" placeholder="Enter the item" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Amount</label>
+                        <input class="form-control" type="text" name="amount" placeholder="Enter the amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Category</label>
+                        <select class="form-control" name="category" required>
+                            <option value="" selected disabled hidden>Choose the category</option>
+                            <option value="food" name="category">Food</option>
+                            <option value="clothes" name="category">Clothes</option>
+                            <option value="travel" name="category">Travel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" class="form-control" name="date">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add Expense">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<center><h3>Your total  Daily expense is :{{a}}</h3>
+</center>
+
+<!-- Footer Starts Here -->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-item">
+          <h4>Finance Business</h4>
+          <p>Powerful, secure, and scalable financial data analytics, that infuses intelligence into your workflows to drive decision-making and action. Propel your growth, capture every opportunity and add value to your customers with data from each transaction</p>
+          <ul class="social-icons">
+            <li><a rel="nofollow" href="https://fb.com/templatemo" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Useful Links</h4>
+          <ul class="menu-list">
+            <li><a href="#">Profit and Loss Dashboard</a></li>
+            <li><a href="#">Profit Margin Analysis(CFO Dashboard)</a></li>
+            <li><a href="#">Retail Banking Dashboard</a></li>
+            <li><a href="#">Investment Portfolio</a></li>
+            <li><a href="#">Balance Sheet Analysis</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Additional Pages</h4>
+          <ul class="menu-list">
+            <li><a href="{% url 'about' %}">About Us</a></li>
+            <li><a href="#">How We Work</a></li>
+            <li><a href="#">Quick Support</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item last-item">
+          <h4>Contact Us</h4>
+          <div class="contact-form">
+            <form id="contact footer-contact" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-Mail Address" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2020 Financial Business Co., Ltd.
+          
+          - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">Maaz Ekkiswala</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core  JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery1.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap1.bundle.min.js' %}"></script>
+
+  <!-- Additional Scripts -->
+  <script src="{% static 'js/custom.js' %}"></script>
+  <script src="{% static 'js/owl.js' %}"></script>
+  <script src="{% static 'js/slick.js' %}"></script>
+  <script src="{% static 'js/accordions.js' %}"></script>
+
+  <script language = "text/Javascript"> 
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t){                   //declaring the array outside of the
+    if(! cleared[t.id]){                      // function makes it static and global
+        cleared[t.id] = 1;  // you could use true and false, but that's more typing
+        t.value='';         // with more chance of typos
+        t.style.color='#fff';
+        }
+    }
+  </script>
+
+</body>
+</html>
